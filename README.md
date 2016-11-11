@@ -52,3 +52,10 @@ What is design without colour? Personally, I like using [Adobe Color](color.adob
 
 ![Colours](colors.png)
 
+## Layout Planning
+
+To plan the layout, I wanted to create a (very) basic mockup. I used Inkscape to create this mockup. The colours and shapes chosen are simply there to help me place other elements. I also decided to create a mobile mockup at the same time to see how my layout could adapt to a smaller screen.
+
+![Web Mockup](proto/lfp.png)
+
+![Web Mockup](proto/lfp-mobile.png)
