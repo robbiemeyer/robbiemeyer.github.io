@@ -76,7 +76,7 @@ h1{
 	width: 45%;
 }
 
-@media all and (min-width: 600px){
+@media all and (min-width: 700px){
 	html{
 		box-shadow: inset #f4efe0 0 0 0 1em,
 					inset #00796d 0 0 0 1.7em;
