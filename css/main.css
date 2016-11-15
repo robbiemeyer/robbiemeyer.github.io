@@ -1,0 +1,148 @@
+html{
+	padding-bottom: 1em;
+	font-family: "Source Sans Pro";
+}
+
+body {
+	background-color: #f4efe0;
+	font-size: 16px;
+}
+
+#content{
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+h1{
+	margin: 3% 0 0 0;
+	font-family: "Bebas Neue";
+	font-weight: normal;
+	font-size: 4.5em;
+	color: #00796d;
+	width 100%;
+	text-align: center;
+}
+
+#navbar {
+	border-color: #00796d;
+	border-style: solid;
+	border-width: 4px;
+	height: 2.2em;
+	line-height: 2.2em;
+	text-align: center;
+	font-weight: lighter;
+	overflow: hidden;
+}
+
+#menu{
+	text-align: left;
+}
+
+.navbar-element{
+	display: block;
+	margin: 0 2.5% 0 2.5%;
+	text-align: left;
+}
+
+.huge, .big, .med, .small {
+	box-sizing: border-box;
+	display: inline-block;
+	margin-top: 5%;
+	padding: 4%; 
+	border-style: solid;
+	border-color: #00796d;
+	border-width: 4px;
+}
+
+.gap-left{
+		margin-left:5%;
+		float: right;
+}
+
+.huge{
+	width: 100%;
+}
+
+.big{
+	width: 100%;
+}
+
+.med{
+	width: 100%;
+}
+
+.small{
+	width: 45%;
+}
+
+@media all and (min-width: 600px){
+	html{
+		box-shadow: inset #f4efe0 0 0 0 1em,
+					inset #00796d 0 0 0 1.7em;
+		min-height: 94%;
+		padding-bottom: 3em;
+	}
+
+	h1{
+		font-size: 6.5em;
+	}
+
+	#navbar{
+		max-height: 2.2em;
+	}
+
+	.navbar-element{
+		display: inline-block;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	.huge{
+		width: 100%;
+	}
+
+	.big{
+		width: 100%;
+	}
+
+	.med{
+		width: 100%;
+	}
+
+	.small{
+		width: 35%;
+	}
+
+	#content {
+		padding-top: 2%;
+		width: 80%;
+	}
+}
+
+@media all and (min-width: 1000px){
+	body{
+	}
+
+	.huge{
+		width: 100%;
+	}
+
+	.big{
+		width: 55%;
+	}
+
+	.med{
+		width: 40%;
+	}
+
+	.small{
+		width: 15%;
+	}
+
+	#content {
+		width: 60%;
+	}
+}
