@@ -3,7 +3,7 @@ var height = 2.2;
 var maxHeight = 11;
 
 function resize(){
-		clearInterval(grow);
+	clearInterval(grow);
 	if (height < maxHeight)
 		grow = setInterval('getBig()', 5);
 	else
@@ -23,3 +23,4 @@ function getSmall(){
 	if (height <= 2.2)
 		clearInterval(grow);
 }
+
