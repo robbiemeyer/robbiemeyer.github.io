@@ -1,5 +1,5 @@
-#...
-There is nothing here now, but this is the future home of 
-my personal website.
+#Robbie Meyer's Personal Website
 
-Check out the creation branch for updates on this websites development.
+It's now working, but it's not one hundred percent finished. 
+
+Information regarding the creation process of this site can be found in the creation branch.
