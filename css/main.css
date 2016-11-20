@@ -1,10 +1,12 @@
 html{
 	padding-bottom: 1em;
 	font-family: 'Source Sans Pro', 'Arial', 'sans serif';
+	background-color: #fffefe;
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("./crossword.png");
 }
 
 body {
-	background-color: #fffefe;
 	font-size: 17px;
 }
 
@@ -58,6 +60,14 @@ h3{
 
 .navbar-element[href="index.html"]{
 	color: black;
+}
+
+.navbar-element:hover{
+	color: #aaaaaa;
+}
+
+.navbar-element[href="index.html"]:hover{
+	color: #555555;
 }
 
 #menu{
@@ -186,10 +196,12 @@ input[value="Send"]{
 
 @media all and (min-width: 620px){
 	html{
-		box-shadow: inset #fefefa 0 0 0 1em,
+		bbox-shadow: inset #fefefa 0 0 0 1em,
 					inset #2c6779 0 0 0 1.7em;	
 
-		min-height: 93.5%;
+		outline: 10px solid #2c6779;
+		outline-offset: -20px;
+		min-height: 94.5%;
 		padding-bottom: 2.9em;
 	}
 
