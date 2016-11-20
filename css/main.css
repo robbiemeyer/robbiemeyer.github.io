@@ -1,10 +1,10 @@
 html{
 	padding-bottom: 1em;
-	font-family: "Source Sans Pro";
+	font-family: 'Source Sans Pro', 'Arial', 'sans serif';
 }
 
 body {
-	background-color: #fffaf0;
+	background-color: #fffefe;
 	font-size: 17px;
 }
 
@@ -15,28 +15,38 @@ body {
 
 
 h1{
-	margin: 3% 0 0 0;
-	font-family: "Bebas Neue";
+	margin: 6% 0 2% 0;
+	font-family: 'bebasregular', 'Source Sans Pro', 'Arial', 'sans serif';
 	font-weight: normal;
-	font-size: 3.7em;
-	color: #00796d;
+	font-size: 2.9em;
+	color: #2c6779;
 	width 100%;
 	text-align: center;
 }
 
 h2 {
-	margin: 3% 0 0 0;
-	font-family: "Bebas Neue";
+	margin: 4% 0 0 0;
+	font-family: 'bebasregular', 'Source Sans Pro', 'Arial', 'sans serif';
 	font-weight: normal;
-	font-size: 2.2em;
-	color: #00796d;
+	font-size: 1.7em;
+	color: #2c6779;
 	width 100%;
 	text-align: center;
 }
 
+h3{
+	margin: 2% 0 2% 0;
+	font-family: 'bebasregular', 'Source Sans Pro', 'Arial', 'sans serif';
+	font-weight: normal;
+	font-size: 1.3em;
+	color: #333333;
+}
+
 
 #navbar {
-	border-color: #00796d;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-color: #2c6779;
 	border-style: solid;
 	border-width: 4px;
 	height: 2.2em;
@@ -64,13 +74,15 @@ h2 {
 }
 
 .huge, .big, .med, .small {
+	background-color: white;
 	box-sizing: border-box;
 	display: inline-block;
 	margin-top: 3%;
 	padding: 3%; 
 	border-style: solid;
-	border-color: #00796d;
+	border-color: #2c6779;
 	border-width: 4px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .gap-left{
@@ -95,16 +107,24 @@ h2 {
 }
 
 #me {
-	max-width: 400px;
+	max-width: 350px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2%;
 }
 
+.caption {
+	text-align: center;
+	line-height: 10px;
+	margin: 5% 0 0 0;
+	font-weight: lighter;
+}
+
 .contactlabel{
+	background-color: white;
 	box-sizing: border-box;
 	display: inline-block;
-	border-color: #00796d;
+	border-color: #2c6779;
 	border-style: solid;
 	border-width: 4px;
 	padding-left: 1%;
@@ -112,18 +132,19 @@ h2 {
 	line-height: 2.4em;
 	width: 100%;
 	margin-top: 2%;
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro', 'Arial', 'sans serif';
 	font-size: 1rem;
 	font-weight: lighter;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .contactform{
-	background-color: #fffaf0;
+	background-color: white;
 	outline: none;
 	border:none;
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro', 'Arial', 'sans serif';
 	font-size: 1rem;
-	width: 80%;
+	width: 79%;
 }
 
 input.contactform{
@@ -138,8 +159,8 @@ textarea.contactform {
 }
 
 input[value="Send"]{
-	background-color: #00796d;
-	color: #fffaf0;
+	background-color: #2c6779;
+	color: white;
 	font-size: .8em;
 	line-height: 1rem;
 	font-weight: bold;
@@ -153,16 +174,28 @@ input[value="Send"]{
 	height:115vw;
 	width:100%;
 }
-@media all and (min-width: 600px){
+
+.footer{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	font-size:0.8em;
+	text-align: center;
+	color: #aaaaaa;
+}
+
+@media all and (min-width: 620px){
 	html{
-		box-shadow: inset #fffaf0 0 0 0 1em,
-					inset #00796d 0 0 0 1.7em;
-		min-height: 94%;
-		padding-bottom: 3em;
+		box-shadow: inset #fefefa 0 0 0 1em,
+					inset #2c6779 0 0 0 1.7em;	
+
+		min-height: 93.5%;
+		padding-bottom: 2.9em;
 	}
 
 	h1{
-		font-size: 6.3em;
+		margin-top: 5%;
+		font-size: 4.3em;
 	}
 
 	#navbar{
@@ -190,7 +223,6 @@ input[value="Send"]{
 		width: 48.5%;
 	}
 	.contactform{
-		width: 80%;
 	}
 	.contactformlabel{
 		float:right;
@@ -204,8 +236,10 @@ input[value="Send"]{
 	}
 }
 
-@media all and (min-width: 1000px){
-	body{
+@media all and (min-width: 1100px){
+	h1{
+		margin-top: 3%;
+		font-size: 4.7em;
 	}
 
 	.huge{
