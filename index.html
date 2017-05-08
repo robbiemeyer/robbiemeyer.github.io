@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
 	<head>
+
 		<title>Robbie Meyer</title>
 		<link rel='icon' type='image/x-icon' href='favicon.png' />
 		<meta charset="utf-8"/>
@@ -20,7 +21,8 @@
 		</script>
 
 	</head>
-	<body >
+
+	<body>
 
 
 		<div id="content">
@@ -28,27 +30,67 @@
 
 			<div id="navbar">
 				<span class="navbar-element" id="menu" onclick="resize()"> &#8801 MENU </span>
-				<a class="navbar-element" href="index.html"> HOME </a>
-				<a class="navbar-element" href="./resume/"> RESUME </a>
-				<a class="navbar-element" href="./contact/"> CONTACT </a>
+				<a class="navbar-element" href="."> HOME </a>
+				<a class="navbar-element" href="./resume"> RESUME </a>
+				<a class="navbar-element" href="./projects"> PROJECTS </a>
+				<a class="navbar-element" href="./contact"> CONTACT </a>
 				<a class="navbar-element" href="http://github.com/robbiemeyer"> GITHUB </a>
+				<a class="navbar-element" href="https://www.linkedin.com/in/robbie-meyer-8a3b19127/"> LINKEDIN </a>
 			</div>
 
-			<div id="me" >
-				<span class="med">
-					<img src="./img/me.png" alt="Robbie Meyer" style="width:100%"> </img></br>
-				</span>
-			</div>
-
-			<div class="big gap-left">
+			<div class="huge" id="info-box">
 				<h3>Hello!</h3>
-                THIS TEXT REALLY NEEDS TO BE CHANGED.
+
+                I'm Robbie Meyer, a Systems Design Engineering Student at the
+                University of Waterloo. I love to design and develop solutions
+                for the problems that affect us all. I'm always looking for new
+                and interesting opportunities.
+
 				</br>
 				</br>
-				Want to chat? Just send me a message, I'll respond as soon as I can.
+
+                Want to chat? Just send me a <a href="./contact">message</a>,
+                I'll respond as soon as I can.
+
 			</div>
+
+            <h2>My Projects</h2>
+
+            <span class="half">
+                Project1 
+            </span>
+
+            <span class="half gap-left">
+                <img src="./img/me.png" alt="Robbie Meyer" style="width:50%"> </img></br>
+                Project2
+            </span>
+
+            
+            <h2>My Resume:</h2>
+
+            <iframe src="https://drive.google.com/file/d/0B4sEZC_JPkP5VE8zNnVCQ3BHeGc/preview" 
+                class="huge" id="pdf-container"></iframe>
+
+
+            <h2>Send me a message:</h2>
+            <form action="https://formspree.io/robbiemeyerwebform@gmail.com" method="POST" style="width:100%">
+                <label class="contactlabel"> NAME:
+                    <input type='text' name = 'name' class="contactform" required\> 
+                </label>
+
+                <label class="contactlabel" style="float:right"> EMAIL:
+                    <input type='text' name = '_replyto' class="contactform" required> 
+                </label>
+
+                <label class="contactlabel" id="contactbox"> MESSAGE:</br>
+                    <textarea name = 'message' class="contactform" required></textarea>
+                </label>
+
+                <input type="text" name="_gotcha" style="display:none" class="contactform"/>
+                <input type="hidden" name="_next" value="./thanks.html"/>
+                <input type = 'submit' value = "Send">
+            </form>
 			</br>
-			<p style="visibility:hidden">Hidden</p>
 		</div>
 		<div class='footer'>
             <br>
