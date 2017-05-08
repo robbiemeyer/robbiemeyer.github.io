@@ -20,7 +20,7 @@ h1{
 	margin: 6% 0 2% 0;
 	font-family: 'bebasregular', 'Source Sans Pro', 'Arial', 'sans serif';
 	font-weight: normal;
-	font-size: 2.9em;
+	font-size: 2.8em;
 	color: #2c6779;
 	width 100%;
 	text-align: center;
@@ -56,6 +56,8 @@ h3{
 	text-align: center;
 	font-weight: lighter;
 	overflow: hidden;
+
+    transition: 0.5s;
 }
 
 .navbar-element[href="index.html"]{
@@ -187,8 +189,7 @@ input[value="Send"]{
 
 .footer{
 	position: relative;
-	width: 90%;
-	left: 5%;
+	width: 100%;
 	font-size:0.8em;
 	text-align: center;
 	color: #aaaaaa;
