@@ -1,13 +1,14 @@
-var height = 2.2;
-var minHeight = 2.2;
-
-function resize(){
+function resize(elem, minHeight){
+    var height = elem.style.maxHeight.replace(/\D+$/,"");
     if (height > minHeight){
-        height = minHeight;
-        document.getElementById("navbar").style.maxHeight = height + "em";
+        elem.style.maxHeight = minHeight + "em";
     }
     else{
-        height = 30;
-        document.getElementById("navbar").style.maxHeight = height + "em";
+        elem.style.maxHeight = 100 + "em";
     }
+}
+
+function expandreadmore (elem){
+    elem.innerHTML = null;
+    resize(elem.parentNode, 3);
 }

@@ -29,17 +29,16 @@
 			<h1>ROBBIE MEYER</h1>
 
 			<div id="navbar">
-				<span class="navbar-element" id="menu" onclick="resize()"> &#8801 MENU </span>
-				<a class="navbar-element" href="."> HOME </a>
-				<a class="navbar-element" href="./resume"> RESUME </a>
-				<a class="navbar-element" href="./projects"> PROJECTS </a>
-				<a class="navbar-element" href="./contact"> CONTACT </a>
+				<span class="navbar-element" id="menu" onclick="resize(this.parentNode, 2.2)"> &#8801 MENU </span>
+				<a class="navbar-element" href="#projects"> PROJECTS </a>
+				<a class="navbar-element" href="#resume"> RESUME </a>
+				<a class="navbar-element" href="#contact"> CONTACT </a>
 				<a class="navbar-element" href="http://github.com/robbiemeyer"> GITHUB </a>
 				<a class="navbar-element" href="https://www.linkedin.com/in/robbie-meyer-8a3b19127/"> LINKEDIN </a>
 			</div>
 
 			<div class="huge" id="info-box">
-				<h3>Hello!</h3>
+				<div id="hello">Hello!</div>
 
                 I'm Robbie Meyer, a Systems Design Engineering Student at the
                 University of Waterloo. I love to design and develop solutions
@@ -54,26 +53,92 @@
 
 			</div>
 
-            <h2>My Projects</h2>
-
-            <span class="half">
-                Project1 
-            </span>
-
-            <span class="half gap-left">
-                <img src="./img/me.png" alt="Robbie Meyer" style="width:50%"> </img></br>
-                Project2
-            </span>
-
+            <h2><a name="projects"></a>My Current Projects</h2>
             
-            <h2>My Resume:</h2>
 
+            <h3>vWolf</h3>
+            <div class="imagebox">
+                <img class="med" src="./img/vwolf-phone.png" alt="vWolf screenshot"></img>
+            </div>
+
+            <span class="big gap-left">
+
+                vWolf is a virtual moderator for the game of Werewolf. In a
+                traditional game of werewolf a player must sit out to moderate.
+                Using vWolf, all players can participate. It can be played at
+                <a href="http://vwolf.robbiemeyer.me">vwolf.robbiemeyer.me</a>.
+                The project's code can be found on my <a
+                    href="https://github.com/robbiemeyer/vWolf">github</a>.
+
+                <h4>Features</h4>
+                Currently players can:
+                <ul>
+                    <li>Create rooms</li>
+                    <li>Decide on the number of werewolves</li>
+                    <li>Have their roles randomly selected</li>
+                    <li>Vote out losing players</li>
+                    <li>Automatically know when the game is ended</li>
+                </ul>
+
+                As the game is web based, users can connect from any device. The game was designed from
+                the ground up to accommodate all types of devices so no one would have to sit out.
+
+            </span>
+
+            <div style="max-height:2.5em; overflow-y: hidden" class="huge">
+                <div class="readmore" onclick="expandreadmore(this)">Read more about vWolf<br><br></div>
+                <h4>Technology</h4>
+
+                vWolf is built using HTML/CSS, Javascript and Firebase. I
+                wanted the application to run fully client-side to allow for
+                easy web hosting.<br> <br>
+
+                I chose to use web technologies for the sake of portability. It
+                was important to me that everyone should be able to use vWolf.
+                To achieve this goal I targeted browsers from IE 9 and newer.<br><br>
+                
+                Firebase's real-time database allowed for easy transference of
+                data between different clients. The application was designed to
+                asynchronously retrieve data from the Firebase server. The
+                communication is fast and responsive.  This effect is most
+                noticeable when changing role counts on multiple devices at the
+                same time. The website is also hosted using Firebase.<br><br>
+
+                <img src="./img/vwolf-ingame.png" alt="vWolf interface screenshot"></img>
+
+                <h4>The Interface</h4> 
+                
+                I designed the vWolf interface to be simple and
+                non-intrusive. It is responsive and can function well 
+                on all screen sizes.<br><br>
+                
+                Each page features a large action button that indicates the
+                action the player can currently take. Once game events begin, a
+                log appears to keep track of past events. Roles are hidden
+                under a menu to defeat wandering eyes. Every player sees the
+                same information - no player is given an unfair advantage. <br><br>
+
+                I initially used wireframes to design the interface. I then
+                coded and tested a 'rough' interface. The interface was then
+                polished and refined. The design shifted from an interface
+                centered upon interacting with player names, to a design
+                focused on a single action button.  This change simplified the
+                interface by providing a common interaction model for the user
+                throughout the whole app. At this point the colour-scheme was
+                finalized and I designed the logo. vWolf's interface was
+                finished.<br>
+
+            </div>
+
+            <h2><a name="resume"></a>My Resume</h2>
+            
             <iframe src="https://drive.google.com/file/d/0B4sEZC_JPkP5VE8zNnVCQ3BHeGc/preview" 
                 class="huge" id="pdf-container"></iframe>
 
 
-            <h2>Send me a message:</h2>
-            <form action="https://formspree.io/robbiemeyerwebform@gmail.com" method="POST" style="width:100%">
+            <h2><a name="contact"></a>Send me a message</h2>
+            
+            <form action="https://formspree.io/robbiemeyerwebform@gmail.com" method="POST" style="width:100%;">
                 <label class="contactlabel"> NAME:
                     <input type='text' name = 'name' class="contactform" required\> 
                 </label>
@@ -87,9 +152,14 @@
                 </label>
 
                 <input type="text" name="_gotcha" style="display:none" class="contactform"/>
-                <input type="hidden" name="_next" value="./thanks.html"/>
-                <input type = 'submit' value = "Send">
+                <!--<input type="hidden" name="_next" value="./thanks.html"/>-->
+
+                <div style="text-align: right">
+                    <input type = 'submit' value = "Send">
+                </div>
             </form>
+
+
 			</br>
 		</div>
 		<div class='footer'>
