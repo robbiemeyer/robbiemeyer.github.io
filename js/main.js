@@ -1,6 +1,6 @@
 function resize(elem, minHeight){
     var height = elem.style.maxHeight.replace(/\D+$/,"");
-    if (height > minHeight){
+    if (minHeight > 0 && height > minHeight){
         elem.style.maxHeight = minHeight + "em";
     }
     else{
@@ -10,5 +10,5 @@ function resize(elem, minHeight){
 
 function expandreadmore (elem){
     elem.innerHTML = null;
-    resize(elem.parentNode, 3);
+    resize(elem.parentNode, -1);
 }
