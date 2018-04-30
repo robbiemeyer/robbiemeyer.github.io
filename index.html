@@ -1,6 +1,17 @@
 ---
-title: Home
 layout: default
 ---
 
-HELLO
+<h2> Posts </h2>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | absolute_path }}"> {{ post.title }} </a>
+  </li>
+{% endfor %}
+
+<h2> Projects </h2>
+{% for project in site.projects %}
+  <li>
+    <a href="{{ project.url | absolute_path }}"> {{ project.title }} </a>
+  </li>
+{% endfor %}
