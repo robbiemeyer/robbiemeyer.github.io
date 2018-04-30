@@ -1,6 +1,7 @@
 title: Robbie Meyer
 baseurl: ""
 url: "robbiemeyer.com"
+permalink: /:categories/:year/:month/:day/:title
 
 collections:
   projects:
