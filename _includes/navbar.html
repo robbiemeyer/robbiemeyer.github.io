@@ -1,37 +1,44 @@
+{% case page.navbar%}
+ {% when 'posts' %} 
+   {% assign postactive = 'active' %}
+ {% when 'projects' %} 
+   {% assign projectactive = 'active' %}
+ {% when 'resume' %} 
+   {% assign resumeactive = 'active' %}
+ {% when 'contact' %} 
+   {% assign contactactive = 'active' %}
+{% endcase %}
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href=".">Robbie Meyer</a>
+  <div class="container">
+    <a class="navbar-brand" href="/">Robbie Meyer</a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="navbar-collapse collapse justify-content-stretch" id="navbarContent">
-        <ul class="navbar-nav ml-auto">
+    <div class="navbar-collapse collapse justify-content-stretch" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item">
-                <a class="nav-link" href="">Posts</a>
-            </li>
+        <li class="nav-item {{ postactive }}">
+          <a class="nav-link" href="">Posts</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
+        <li class="nav-item {{ projectactive }}">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
-            </li>
+        <li class="nav-item {{ resumeactive }}">
+          <a class="nav-link" href="#">Resume</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+        <li class="nav-item {{ contactactive }}">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                {{ page.navbar }}
-              </a>
-            </li>
+      </ul>
 
-        </ul>
-
+    </div>
   </div>
 
 </nav>

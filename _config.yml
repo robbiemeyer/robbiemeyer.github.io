@@ -13,3 +13,10 @@ defaults:
       type: projects
     values:
       layout: default
+      navbar: projects
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: default
+      navbar: posts
