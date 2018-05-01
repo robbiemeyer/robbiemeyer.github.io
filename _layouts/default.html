@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html> 
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-    {% if page.title %}
-      <title>{{ page.title }} | Robbie Meyer</title>
-    {% else %}
-      <title>Robbie Meyer</title>
-    {% endif %}
+---
+layout: base
+---
 
-  </head>
+<div class="container">
+  {{ content }}
 
-  <body>
-
-    {{ content }}
-
-    <div><small id="copyright"> &copy {{ 'now' | date: "%Y" }} Robbie Meyer</small></div>
-  </body>
-</html>
+</div>
