@@ -1,10 +1,60 @@
-.home-heading{
+body {
+  font-family: Raleway;
+}
+
+.navbar{
+  &.bg-light {
+    background-color: white !important;
+  }
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .navbar-brand{
+    font-weight: 800;
+  }
+  .nav-item {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+}
+
+.splash{
+  position: sticky;
+  top: 0;
+  height: 500px;
+  max-height: 80vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+
+  background-color: black;
+  color: yellow;
+
   text-align: center;
-  h2 {
-    display: inline-block;
-    color: white;
-    background: black;
-    padding: 5px 10px;
+
+  > div {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+h2 {
+  display: inline-block;
+  padding: 10px;
+
+  color: white;
+  background: black;
+
+  font-weight: 700;
+
+  &:first-of-type {
+    margin-top: 8px;
   }
 }
 

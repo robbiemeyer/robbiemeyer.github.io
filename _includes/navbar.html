@@ -9,9 +9,11 @@
    {% assign contactactive = 'active' %}
 {% endcase %}
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="/">Robbie Meyer</a>
+    <a class="navbar-brand" href="/">
+      Robbie Meyer
+    </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,6 +36,14 @@
 
         <li class="nav-item {{ contactactive }}">
           <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Github</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">LinkedIn</a>
         </li>
 
       </ul>

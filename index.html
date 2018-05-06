@@ -2,16 +2,32 @@
 layout: base
 ---
 
-<div class='home-heading'><h2> Posts </h2></div>
-{% for post in site.posts %}
-  <li>
-    <a href="{{ post.url | absolute_path }}"> {{ post.title }} </a>
-  </li>
-{% endfor %}
+<div class="splash">
+  <div>
+    <img src="assets/images/logo.svg"/>
+    <div>
+      Hi, I'm a Systems Design Engineering Student at the University of Waterloo. I love
+      to design and develop solutions for the problems that affect us all.
+    </div>
+  </div>
+</div>
 
-<div class='home-heading'><h2> Projects </h2></div>
-{% for project in site.projects %}
-  <li>
-    <a href="{{ project.url | absolute_path }}"> {{ project.title }} </a>
-  </li>
-{% endfor %}
+{% include navbar.html %}
+
+<div style='height: 1000px; background: white'>
+  <div class='container'>
+    <h2> Posts </h2>
+    {% for post in site.posts %}
+      <div>
+        <a href="{{ post.url | absolute_path }}"> {{ post.title }} </a>
+      </div>
+    {% endfor %}
+
+    <h2> Projects </h2>
+    {% for project in site.projects %}
+      <li>
+        <a href="{{ project.url | absolute_path }}"> {{ project.title }} </a>
+      </li>
+    {% endfor %}
+  </div>
+</div>
