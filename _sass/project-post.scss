@@ -1,3 +1,14 @@
 .gen {
+  h1 {
+    background-color: $theme-fg;
+    color: white;
+    text-shadow: 1px 1px 0 $theme-accent;
+
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 20px 0;
+  }
 
 }
