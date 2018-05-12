@@ -14,16 +14,14 @@ layout: base
 
 {% include navbar.html %}
 
-<div style='height: 1000px; background: white'>
+<div class='parent-container' style='height: 1000px; '>
   <div class='container'>
-    <h2> Posts </h2>
-    {% for post in site.posts %}
-      <div>
-        <a href="{{ post.url | absolute_path }}"> {{ post.title }} </a>
-      </div>
-    {% endfor %}
+    <span class='home-heading'> Posts </span>
+    <div>
+      <a href="{{ site.posts[0].url | absolute_path }}"> {{ site.posts[0].title }} </a>
+    </div>
 
-    <h2> Projects </h2>
+    <span class='home-heading'> Projects </span>
     {% for project in site.projects %}
       <li>
         <a href="{{ project.url | absolute_path }}"> {{ project.title }} </a>
