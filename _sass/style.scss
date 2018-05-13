@@ -9,10 +9,11 @@ $theme-accent: #ff00ff;
 @import "project-post";
 
 body {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
 }
 
 #copyright {
+  margin-top: 2em;
   font-size: 0.75em;
   text-align: center;
 }

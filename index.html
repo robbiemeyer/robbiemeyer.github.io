@@ -14,7 +14,7 @@ layout: base
 
 {% include navbar.html %}
 
-<div class='parent-container' style='height: 1000px; '>
+<div class='parent-container'>
   <div class='container'>
     <span class='home-heading'> Posts </span>
     <div>
@@ -22,10 +22,19 @@ layout: base
     </div>
 
     <span class='home-heading'> Projects </span>
-    {% for project in site.projects %}
-      <li>
-        <a href="{{ project.url | absolute_path }}"> {{ project.title }} </a>
-      </li>
-    {% endfor %}
+    <div class='card-columns'>
+      {% for project in site.projects %}
+        {% include project-card.html project=project %} 
+      {% endfor %}
+    </div>
+
+    <span class='home-heading'> Resume </span>
+
+    <div id='resume-embed'>
+      <a target='_blank' href='assets/resume/resume.pdf' download>
+        <i class="far fa-file"></i> &nbsp; Download as a PDF
+      </a>
+      <img src='assets/resume/resume.svg'/>
+    </div>
   </div>
 </div>
