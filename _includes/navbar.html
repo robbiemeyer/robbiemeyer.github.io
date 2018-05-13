@@ -1,6 +1,6 @@
 {% case page.navbar%}
- {% when 'posts' %} 
-   {% assign postactive = 'active' %}
+ {% when 'blog' %} 
+   {% assign blogactive = 'active' %}
  {% when 'projects' %} 
    {% assign projectactive = 'active' %}
  {% when 'resume' %} 
@@ -22,20 +22,22 @@
     <div class="navbar-collapse collapse justify-content-stretch" id="navbarContent">
       <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item {{ postactive }}">
-          <a class="nav-link" href="posts">Posts</a>
-        </li>
+        {% if site.posts.size > 0 %}
+          <li class="nav-item {{ bloggctive }}">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+        {% endif %}
 
         <li class="nav-item {{ projectactive }}">
-          <a class="nav-link" href="projects">Projects</a>
+          <a class="nav-link" href="/projects">Projects</a>
         </li>
 
         <li class="nav-item {{ resumeactive }}">
-          <a class="nav-link" href="resume">Resume</a>
+          <a class="nav-link" href="/resume">Resume</a>
         </li>
 
         <li class="nav-item {{ contactactive }}">
-          <a class="nav-link" href="contact">Contact</a>
+          <a class="nav-link" href="/contact">Contact</a>
         </li>
 
         <li class="nav-item">

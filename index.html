@@ -16,12 +16,15 @@ layout: base
 
 <div class='parent-container'>
   <div class='container'>
-    <span class='home-heading'> Posts </span>
-    <div>
-      <a href="{{ site.posts[0].url | absolute_path }}"> {{ site.posts[0].title }} </a>
-    </div>
 
-    <span class='home-heading'> Projects </span>
+    {% if site.posts.size > 0 %}
+      <span class='home-heading'> Posts </span>
+      <div>
+        <a href="{{ site.posts[0].url | absolute_path }}"> {{ site.posts[0].title }} </a>
+      </div>
+    {% endif %}
+
+    <span class='home-heading'> Current Projects </span>
     <div class='card-columns'>
       {% for project in site.projects %}
         {% include project-card.html project=project %} 

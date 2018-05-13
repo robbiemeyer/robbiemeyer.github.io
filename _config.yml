@@ -6,6 +6,8 @@ permalink: /:categories/:year/:month/:day/:title
 collections:
   projects:
     output: true
+  posts:
+    permalink: /blog/:categories/:year/:month/:day/:title
 
 defaults:
   - scope:
@@ -19,4 +21,4 @@ defaults:
       type: posts
     values:
       layout: default
-      navbar: posts
+      navbar: blog
