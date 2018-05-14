@@ -24,20 +24,26 @@ layout: base
       </div>
     {% endif %}
 
-    <span class='home-heading'> Current Projects </span>
+    <span class='home-heading'> 
+      <div id='projects' class='anchor'></div>
+      Current Projects 
+    </span>
     <div class='card-columns'>
       {% for project in site.projects %}
         {% include project-card.html project=project %} 
       {% endfor %}
     </div>
 
-    <span class='home-heading'> Resume </span>
-
+    <span class='home-heading'>
+      <div id='resume' class='anchor'></div>
+      Resume
+    </span>
     <div id='resume-embed'>
       <a target='_blank' href='assets/resume/resume.pdf' download>
-        <i class="far fa-file"></i> &nbsp; Download as a PDF
+        <i class="far fa-file"></i> &nbsp; PDF Download
       </a>
       <img src='assets/resume/resume.svg'/>
     </div>
+
   </div>
 </div>

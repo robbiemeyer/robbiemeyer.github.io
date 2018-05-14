@@ -1,4 +1,8 @@
 ---
+thumbnail: /assets/images/teedler-thumb.jpg
+description: |
+  A command line tool that summarizes a text passage by constructing
+  a multivariate Gaussian distribution from word frequency in the text passage.
 ---
 
 # Teedler

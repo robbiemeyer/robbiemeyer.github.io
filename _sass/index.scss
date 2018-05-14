@@ -30,6 +30,7 @@
 
 .home-heading {
   display: inline-block;
+  position: relative;
   padding: 5px 10px;
   margin: 15px 0;
 
@@ -40,16 +41,21 @@
   font-size: 2rem;
   font-weight: 700;
 
-  &:first-of-type {
-    margin-top: 8px;
-  }
-
   &:hover{
     text-shadow: 1px 1px 0 $theme-focus;
   }
   &:active{
     text-shadow: none;
   }
+}
+
+.anchor {
+  background: pink;
+  height: 2rem;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -50px;
 }
 
 .card-columns {

@@ -23,17 +23,17 @@
       <ul class="navbar-nav ml-auto">
 
         {% if site.posts.size > 0 %}
-          <li class="nav-item {{ bloggctive }}">
+          <li class="nav-item {{ blogactive }}">
             <a class="nav-link" href="/blog">Blog</a>
           </li>
         {% endif %}
 
         <li class="nav-item {{ projectactive }}">
-          <a class="nav-link" href="/projects">Projects</a>
+          <a class="nav-link" href="/#projects">Projects</a>
         </li>
 
         <li class="nav-item {{ resumeactive }}">
-          <a class="nav-link" href="/resume">Resume</a>
+          <a class="nav-link" href="/#resume">Resume</a>
         </li>
 
         <li class="nav-item {{ contactactive }}">
@@ -60,3 +60,8 @@
   </div>
 
 </nav>
+<script>
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+</script>
