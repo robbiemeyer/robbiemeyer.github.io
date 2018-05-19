@@ -45,5 +45,35 @@ layout: base
       <img src='assets/resume/resume.svg'/>
     </div>
 
+    <span class='home-heading'>
+      <div id='contact' class='anchor'></div>
+      Contact
+    </span>
+    <form action="https://formspree.io/robbiemeyerwebform@gmail.com" method="POST" id='contact-form'>
+      <div class='form-row'>
+        <div class='col-md-6'>
+          <label>Name</label>
+          <input name="name" type="text" class='form-control' required>
+        </div>
+
+        <div class='col-md-6'>
+          <label>Email</label>
+          <input name="_replyto" type="text" class='form-control' required>
+        </div>
+
+        <div class='col-12'>
+          <label>Message</label>
+          <textarea name="message" class='form-control' required></textarea>
+        </div>
+
+        <input name="_gotcha" style="display:none" type="text">
+        <!--<input type="hidden" name="_next" value="./thanks.html"/>-->
+
+        <div class='col-3 offset-9 col-md-2 offset-md-10 col-lg-1 offset-lg-11'>
+          <input value="Send" type="submit" class="btn btn-block">
+        </div>
+      </div>
+    </form>
+
   </div>
 </div>
