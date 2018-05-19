@@ -11,4 +11,16 @@
     margin: 20px 0;
   }
 
+  h2 {
+    font-weight: 700;
+    font-size: 1.6em;
+  }
+
+  img {
+    width: 100%;
+    padding: 10px 0;
+    @media (max-width: 576px) {
+      max-width: unset !important;
+    }
+  }
 }
