@@ -1,0 +1,26 @@
+.gen {
+  h1 {
+    background-color: $theme-fg;
+    color: white;
+    text-shadow: 1px 1px 0 $theme-accent;
+
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.6em;
+  }
+
+  img {
+    width: 100%;
+    padding: 10px 0;
+    @media (max-width: 576px) {
+      max-width: unset !important;
+    }
+  }
+}

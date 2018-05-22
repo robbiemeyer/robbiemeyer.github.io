@@ -1,0 +1,152 @@
+.splash{
+  position: sticky;
+  top: 0;
+  height: 500px;
+  max-height: 80vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+
+  background-color: black;
+  color: yellow;
+
+  text-align: center;
+
+  > div {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+.parent-container {
+  background: white;
+  height: 100%;
+}
+
+.home-heading {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  margin: 15px 0;
+
+  color: white;
+  background: black;
+  text-shadow: 1px 1px 0 $theme-accent;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+.anchor {
+  height: 2rem;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -60px;
+}
+
+.card-columns {
+  // Small and up
+  @media (min-width: 576px) {
+    column-count: 2;
+  }
+
+  // Large and up
+  @media (min-width: 992px) {
+    column-count: 3;
+  }
+
+  .card {
+    background-color: $theme-fg;
+    color: $theme-bg;
+
+    margin-bottom: 1rem;
+    border-radius: 0;
+
+    .card-title {
+      font-weight: 700;
+      color: $theme-important;
+    }
+
+    a:last-child {
+      color: $theme-important;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      text-align: right;
+    }
+  }
+}
+
+#resume-embed {
+  padding: 10px;
+  border: 10px solid $theme-fg;
+  position: relative;
+
+  a {
+    background-color: $theme-fg;
+    color: $theme-important;
+    font-weight: 600;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 20px 10px 20px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+#contact-form {
+  font-weight: 600;
+
+  label {
+    background-color: $theme-fg;
+    color: $theme-bg;
+
+    margin-bottom: 0px;
+    padding: 5px 10px;
+  }
+
+  input[type='text'], textarea {
+    border-radius: 0;
+    border: 5px solid $theme-fg;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    box-shadow:none;
+
+    &:focus {
+      outline: 2px solid $theme-focus;
+      outline-offset: -7px;
+    }
+
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  input[type='submit']{
+    color: $theme-important;
+    background-color: $theme-fg;
+    font-weight: 600;
+    border-radius: 0;
+
+    &:focus {
+      color: $theme-focus;
+      box-shadow: none;
+    }
+  }
+}

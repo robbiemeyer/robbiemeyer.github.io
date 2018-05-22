@@ -1,0 +1,67 @@
+{% case page.navbar%}
+ {% when 'blog' %} 
+   {% assign blogactive = 'active' %}
+ {% when 'projects' %} 
+   {% assign projectactive = 'active' %}
+ {% when 'resume' %} 
+   {% assign resumeactive = 'active' %}
+ {% when 'contact' %} 
+   {% assign contactactive = 'active' %}
+{% endcase %}
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      Robbie Meyer
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse justify-content-stretch" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+
+        {% if site.posts.size > 0 %}
+          <li class="nav-item {{ blogactive }}">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+        {% endif %}
+
+        <li class="nav-item {{ projectactive }}">
+          <a class="nav-link" href="/#projects">Projects</a>
+        </li>
+
+        <li class="nav-item {{ resumeactive }}">
+          <a class="nav-link" href="/#resume">Resume</a>
+        </li>
+
+        <li class="nav-item {{ contactactive }}">
+          <a class="nav-link" href="/#contact">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="http://github.com/robbiemeyer">
+            Github
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="http://linkedin.com/in/robbie-meyer">
+            LinkedIn
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</nav>
+<script>
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+</script>

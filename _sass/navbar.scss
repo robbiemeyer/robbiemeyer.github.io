@@ -1,0 +1,35 @@
+.navbar{
+  &.bg-light {
+    background-color: $theme-bg !important;
+  }
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .navbar-brand{
+    font-weight: 800;
+  }
+
+  .nav-item {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    
+    .nav-link {
+      color: #999999;
+    }
+  }
+
+  a {
+    &:hover {
+      text-shadow: 0.5px 0.5px 0 $theme-focus;
+    }
+    &:active {
+      text-shadow: none;
+    }
+  }
+
+  i {
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+  }
+}
