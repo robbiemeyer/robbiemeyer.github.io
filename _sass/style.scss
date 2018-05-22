@@ -17,3 +17,8 @@ body {
   font-size: 0.75em;
   text-align: center;
 }
+
+.btn.btn-dark {
+  color: $theme-important !important;
+  border-radius: 0;
+}
