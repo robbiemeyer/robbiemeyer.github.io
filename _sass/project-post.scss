@@ -22,5 +22,13 @@
     @media (max-width: 576px) {
       max-width: unset !important;
     }
+
+    &.short {
+     max-height: 400px;
+    }
+
+    &.med {
+      max-height: 600px;
+    }
   }
 }
