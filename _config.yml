@@ -1,6 +1,6 @@
 title: Robbie Meyer
 baseurl: ""
-url: "robbiemeyer.com"
+url: "http://robbiemeyer.com"
 permalink: /:categories/:year/:month/:day/:title
 
 plugins:
