@@ -4,6 +4,8 @@ description: |
   Analyzing the 2018 Ontario Election Results and 2016 Census data to determine the
   plausibility of claims made about the election.
 thumbnail: /assets/images/projects/ont-elect/ont-elect-thumb.png
+redirect_from:
+  - /oea
 ---
 
 # Ontario Election Analysis

@@ -3,6 +3,9 @@ baseurl: ""
 url: "robbiemeyer.com"
 permalink: /:categories/:year/:month/:day/:title
 
+plugins:
+  - jekyll-redirect-from
+
 collections:
   projects:
     output: true
