@@ -17,8 +17,8 @@ as bad (spammers). Each data point had over 75 unidentified numerical features.
 The challenge was to figure out how to identify which data points were bad for
 a similar dataset without the good/bad labels.
 
-I fantastic time working on this problem with my team. The problem was
-interesting; I learned a lot and had fun doing it. We ended up creating a
+I had a fantastic time working on this problem with my team. The problem was
+interesting, I learned a lot and had fun doing it. We ended up creating a
 solution that was able to identify the spammers with 99.98% accuracy and won
 the challenge.
 
