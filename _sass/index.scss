@@ -82,6 +82,14 @@
       text-decoration: none;
       display: block;
       text-align: right;
+
+      i {
+        margin-left: 0.3em;
+      }
+    }
+
+    a:last-child:hover {
+      text-decoration: underline;
     }
   }
 }

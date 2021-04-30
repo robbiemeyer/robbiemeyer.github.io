@@ -34,7 +34,8 @@ layout: base
       Projects 
     </span>
     <div class='card-columns'>
-      {% for project in site.projects %}
+      {% assign reverse_projects = site.projects | reverse %}
+      {% for project in reverse_projects %}
         {% include project-card.html project=project %} 
       {% endfor %}
     </div>

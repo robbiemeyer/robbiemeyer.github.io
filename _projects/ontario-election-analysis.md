@@ -1,5 +1,6 @@
 ---
 title: Ontario Election Analysis
+date: 2018-08-07
 description: |
   Analyzing the 2018 Ontario Election Results and 2016 Census data to determine the
   plausibility of claims made about the election.
@@ -7,10 +8,6 @@ thumbnail: /assets/images/projects/ont-elect/ont-elect-thumb.png
 redirect_from:
   - /oea
 ---
-
-# Ontario Election Analysis
-
-*2018-08-07*
 
 Poltical landscapes all across the world seem to be changing, or at least that is what I have heard. Everyone seems to be talking about the current state of politics and everyone seems to have their own explanation for every victory and loss.
 

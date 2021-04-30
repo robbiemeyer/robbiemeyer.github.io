@@ -1,13 +1,12 @@
 ---
 title: Kik Data Challenge
+date: 2018-09-16
 thumbnail: /assets/images/projects/kik-data/kik-data-thumb.png
 description: |
   Identifying spammers in high-dimensional data using machine learning techniques.
 redirect_from:
   - /kdc
 ---
-
-# Kik Data Challenge
 
 In September 2018, I participated in Hack the North. Kik created a data science
 challenge for the hackathon that my group decided to attempt. We were provided
