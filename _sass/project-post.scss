@@ -21,10 +21,6 @@
     display: block;
     margin: 2rem auto;
 
-    @media (max-width: 576px) {
-      max-width: unset !important;
-    }
-
     &.short {
      max-height: 400px;
     }
