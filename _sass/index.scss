@@ -1,4 +1,4 @@
-.splash{
+.splash {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -9,7 +9,7 @@
   align-items: center;
 
   background-color: black;
-  color: yellow;
+  color: $theme-important;
 
   text-align: center;
 
@@ -25,8 +25,10 @@
 }
 
 .parent-container {
-  background: white;
+  background: $theme-bg;
   height: 100%;
+  border-top: 3px solid $theme-bg;
+  margin-top: -3px;
 }
 
 .home-heading {
@@ -35,13 +37,12 @@
   padding: 5px 10px;
   margin: 15px 0;
 
-  color: white;
-  background: black;
+  color: $theme-bg;
+  background: $theme-fg;
   text-shadow: 1px 1px 0 $theme-accent;
 
   font-size: 2rem;
   font-weight: 700;
-
 }
 
 .anchor {
@@ -52,44 +53,55 @@
   top: -60px;
 }
 
-.card-columns {
-  // Small and up
-  @media (min-width: 576px) {
-    column-count: 2;
-  }
+.card-row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 
-  // Large and up
-  @media (min-width: 992px) {
-    column-count: 3;
-  }
-
-  .card {
-    background-color: $theme-fg;
-    color: $theme-bg;
-
+  .col {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-bottom: 1rem;
-    border-radius: 0;
-    border: none;
 
-    .card-title {
-      font-weight: 700;
-      color: $theme-important;
-    }
+    .card {
+      background-color: $theme-fg;
+      color: $theme-bg;
 
-    a:last-child {
-      color: $theme-important;
-      font-weight: 600;
-      text-decoration: none;
-      display: block;
-      text-align: right;
+      border-radius: 0;
+      border: 2px solid $theme-fg;
 
-      i {
-        margin-left: 0.3em;
+      img.card-img-top {
+        border-radius: 0;
       }
-    }
 
-    a:last-child:hover {
-      text-decoration: underline;
+      .card-title {
+        font-weight: 700;
+        color: $theme-important;
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+
+        div:last-child {
+          margin-top: auto;
+          display: flex;
+          justify-content: flex-end;
+
+          a {
+            color: $theme-important;
+            font-weight: 600;
+            text-decoration: none;
+
+            i {
+              margin-left: 0.3em;
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -98,6 +110,7 @@
   padding: 10px;
   border: 10px solid $theme-fg;
   position: relative;
+  margin-bottom: 1rem;
 
   a {
     background-color: $theme-fg;
@@ -132,6 +145,7 @@
   input[type='text'], input[type='email'], textarea {
     border-radius: 0;
     border: 5px solid $theme-fg;
+    height: unset;
     padding: 10px;
     margin-bottom: 15px;
 

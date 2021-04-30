@@ -33,7 +33,7 @@ layout: base
       <div id='projects' class='anchor'></div>
       Projects 
     </span>
-    <div class='card-columns'>
+    <div class='row row-cols-1 row-cols-sm-2 row-cols-lg-3 card-row'>
       {% assign reverse_projects = site.projects | reverse %}
       {% for project in reverse_projects %}
         {% include project-card.html project=project %} 
