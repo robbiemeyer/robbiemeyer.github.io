@@ -7,10 +7,10 @@ description: |
 thumbnail: /assets/images/projects/apollo/apollo-thumb.png
 ---
 
-From September 2020 to April 2021, I worked on Apollo with
-Charmaine Wang, Eason Gao and Ryan Mok. Apollo is our fourth-year design
-project. It is an extension for Google Chrome that helps users to identify
-false or misleading information on Twitter.
+From September 2020 to April 2021, I worked on Apollo with Charmaine Wang,
+Eason Gao and Ryan Mok. Professor Alexander Wong was our project advisor.
+Apollo is our fourth-year design project. It is an extension for Google Chrome
+that helps users to identify false or misleading information on Twitter.
 
 ![Apollo Screenshot](/assets/images/projects/apollo/apollo-overview.png){:.med}
 
