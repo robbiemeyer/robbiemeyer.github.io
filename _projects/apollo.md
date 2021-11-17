@@ -5,6 +5,8 @@ description: |
   A browser extension that assists users in the fact checking process on
   Twitter to combat misinformation. My fourth-year design project.
 thumbnail: /assets/images/projects/apollo/apollo-thumb.png
+redirect_from:
+  - /apollo
 ---
 
 From September 2020 to April 2021, I worked on Apollo with Charmaine Wang,
