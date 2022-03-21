@@ -5,6 +5,7 @@ description: |
   An online moderator for the game of Werewolf built with Firebase.
   Replaces human moderators for in-person Werewolf games.
 thumbnail: /assets/images/projects/vwolf/vwolf-thumb.png
+published: false
 ---
 
 <img alt='vWolf Login' class='float-right' style='max-width: 300px; padding: 20px' src="/assets/images/projects/vwolf/vwolf-phone.png"/>

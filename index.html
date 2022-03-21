@@ -34,8 +34,10 @@ layout: base
       Projects 
     </span>
     <div class='row row-cols-1 row-cols-sm-2 row-cols-lg-3 card-row'>
-      {% assign reverse_projects = site.projects | reverse %}
-      {% for project in reverse_projects %}
+      {% assign projects = site.projects
+        | where_exp: "item", "item.published != false"
+        | reverse %}
+      {% for project in projects %}
         {% include project-card.html project=project %} 
       {% endfor %}
     </div>
@@ -44,12 +46,19 @@ layout: base
       <div id='resume' class='anchor'></div>
       Resume
     </span>
+
+    <div>
+      <i>Please contact me for an up to date resume.</i>
+    </div>
+
+    <!--
     <div id='resume-embed'>
       <a target='_blank' href='/assets/resume/resume.pdf' download>
         <i class="far fa-file"></i> &nbsp; PDF Download
       </a>
       <img src='assets/resume/resume.svg'/>
     </div>
+    ---!>
 
     <span class='home-heading'>
       <div id='contact' class='anchor'></div>
