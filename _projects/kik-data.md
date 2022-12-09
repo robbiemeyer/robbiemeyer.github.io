@@ -6,6 +6,7 @@ description: |
   Identifying spammers in high-dimensional data using machine learning techniques.
 redirect_from:
   - /kdc
+published: false
 ---
 
 In September 2018, I participated in Hack the North. Kik created a data science

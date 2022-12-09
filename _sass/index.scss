@@ -106,11 +106,14 @@
   }
 }
 
+#resume-embed,#resume-embed-placeholder {
+  margin-bottom: 1rem;
+}
+
 #resume-embed {
-  padding: 10px;
   border: 10px solid $theme-fg;
   position: relative;
-  margin-bottom: 1rem;
+  padding: 10px;
 
   a {
     background-color: $theme-fg;

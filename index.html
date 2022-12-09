@@ -36,6 +36,8 @@ layout: base
     <div class='row row-cols-1 row-cols-sm-2 row-cols-lg-3 card-row'>
       {% assign projects = site.projects
         | where_exp: "item", "item.published != false"
+        | concat: site.external_projects
+        | sort: "date"
         | reverse %}
       {% for project in projects %}
         {% include project-card.html project=project %} 
@@ -47,18 +49,18 @@ layout: base
       Resume
     </span>
 
-    <div>
+    <div id='resume-embed-placeholder'>
       <i>Please contact me for an up to date resume.</i>
     </div>
 
-    <!--
+    {% comment %}
     <div id='resume-embed'>
       <a target='_blank' href='/assets/resume/resume.pdf' download>
         <i class="far fa-file"></i> &nbsp; PDF Download
       </a>
       <img src='assets/resume/resume.svg'/>
     </div>
-    ---!>
+    {% endcomment %}
 
     <span class='home-heading'>
       <div id='contact' class='anchor'></div>

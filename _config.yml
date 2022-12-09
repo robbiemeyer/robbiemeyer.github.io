@@ -9,6 +9,8 @@ plugins:
 collections:
   projects:
     output: true
+  external_projects:
+    output: false
   posts:
     permalink: /blog/:categories/:year/:month/:day/:title
 
